@@ -30,7 +30,12 @@ ML_Project/
     model_configs.json
   project/
     data/               # download from Drive
-    outputs/            # download from Drive
+    outputs/
+      part1_summary.json      # dataset statistics (vocab size, split sizes, seq lengths)
+      part2_summary.json      # SP scaling results and power law fit
+      part3_summary.json      # muP scaling results and extrapolation
+      part4_summary.json      # generation metrics and evaluation
+      ...                     # model checkpoints, plots, generated SVGs (download from Drive)
     plots/
   requirements.txt
   report.pdf
@@ -59,7 +64,17 @@ jupyter nbconvert --to notebook --execute notebooks/Part3_MuP_Scaling.ipynb
 jupyter nbconvert --to notebook --execute notebooks/Part4_Generation.ipynb
 ```
 
-Each notebook reads and writes to `project/`. Update `PROJECT_DIR` at the top of each file if your working directory differs.
+Each notebook reads and writes to `project/`. The notebooks were originally developed with a different directory layout, so **update `PROJECT_DIR` at the top of each notebook** before running:
+
+```python
+# Original (do not use)
+PROJECT_DIR = Path("ml_final_project")
+
+# Change to this (matches the repo structure)
+PROJECT_DIR = Path("project")
+```
+
+Run from the repo root (`ML_Project/`) so the relative path resolves correctly.
 
 ---
 
