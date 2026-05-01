@@ -1,0 +1,53 @@
+{
+  "block_size": 256,
+  "batch_size": 64,
+  "dropout": 0.1,
+  "vocab_size": 4096,
+  "models": {
+    "Tiny": {
+      "d_model": 128,
+      "n_layers": 4,
+      "n_heads": 4,
+      "d_ff": 512
+    },
+    "Small": {
+      "d_model": 192,
+      "n_layers": 6,
+      "n_heads": 6,
+      "d_ff": 768
+    },
+    "Medium": {
+      "d_model": 384,
+      "n_layers": 6,
+      "n_heads": 6,
+      "d_ff": 1536
+    },
+    "Large": {
+      "d_model": 512,
+      "n_layers": 10,
+      "n_heads": 8,
+      "d_ff": 2048
+    },
+    "XL": {
+      "d_model": 768,
+      "n_layers": 12,
+      "n_heads": 12,
+      "d_ff": 3072
+    }
+  },
+  "training": {
+    "optimizer": "AdamW",
+    "betas": [0.9, 0.95],
+    "weight_decay": 0.1,
+    "grad_clip": 1.0,
+    "warmup_fraction": 0.05,
+    "lr_schedule": "cosine",
+    "min_lr_ratio": 0.1
+  },
+  "mup": {
+    "base_d_model": 128,
+    "attention_scaling": "1/d",
+    "output_layer": "MuReadout",
+    "optimizer": "MuAdamW"
+  }
+}
