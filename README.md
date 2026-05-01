@@ -1,4 +1,4 @@
-# CS-GY 6923 Optional Project: SVG Scaling Laws
+# CS-GY 6923 Project: SVG Scaling Laws
 
 Decoder-only transformer language models trained on SVG code to study neural scaling laws
 and the effect of Maximal Update Parameterization (muP) on learning rate transfer.
