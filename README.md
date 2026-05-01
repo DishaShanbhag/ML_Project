@@ -1,6 +1,6 @@
 # SVG Scaling Laws
 
-**CS-GY 6923 | Disha D Shanbhag (ds8223 / N11461466) | NYU Tandon School of Engineering**
+**CS-GY 6923 | Machine Learning | NYU Tandon School of Engineering**
 
 This project investigates whether neural scaling laws hold for transformer language models trained on structured, non-linguistic data, specifically Scalable Vector Graphics (SVG) code. Five decoder-only transformer models ranging from 1.35M to 88.4M parameters are trained on a corpus of ~284K SVG files (~116M tokens) drawn from three HuggingFace datasets.
 
