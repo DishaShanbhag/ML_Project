@@ -1,0 +1,83 @@
+{
+  "best_model": "XL",
+  "parameterization": "muP",
+  "lr": 0.01,
+  "num_epochs": 5,
+  "n_params": 91544064,
+  "final_val_loss": 0.9203434407711029,
+  "test_loss": 0.9189488771888945,
+  "test_perplexity": 2.506654203288426,
+  "evaluation": {
+    "n_samples": 23,
+    "xml_validity_rate": 82.6086956521739,
+    "render_rate": 82.6086956521739,
+    "structural_validity_rate": 82.6086956521739
+  },
+  "by_temperature": {
+    "0.5": {
+      "n_samples": 6,
+      "xml_valid": 5,
+      "renderable": 1
+    },
+    "0.8": {
+      "n_samples": 6,
+      "xml_valid": 4,
+      "renderable": 2
+    },
+    "1.0": {
+      "n_samples": 6,
+      "xml_valid": 5,
+      "renderable": 5
+    }
+  },
+  "generation_config": {
+    "temperatures": [
+      0.5,
+      0.8,
+      1.0
+    ],
+    "top_k": 50,
+    "top_p": 0.95,
+    "max_new_tokens": 768,
+    "n_unconditional": 18,
+    "n_prefix": 5
+  },
+  "prefix_results": [
+    {
+      "id": "partial_face",
+      "description": "Circle with one eye. Does the model add the other eye and mouth?",
+      "new_tokens": 569,
+      "xml_valid": true,
+      "renderable": true
+    },
+    {
+      "id": "open_path",
+      "description": "An open triangle path. Does the model close it?",
+      "new_tokens": 426,
+      "xml_valid": true,
+      "renderable": true
+    },
+    {
+      "id": "group_one_shape",
+      "description": "A group with one rectangle. Does the model add related shapes?",
+      "new_tokens": 1,
+      "xml_valid": true,
+      "renderable": true
+    },
+    {
+      "id": "star_start",
+      "description": "Beginning of a star polygon. Does the model complete it?",
+      "new_tokens": 768,
+      "xml_valid": true,
+      "renderable": false
+    },
+    {
+      "id": "two_circles",
+      "description": "Two circles side by side. Does the model build a pattern?",
+      "new_tokens": 374,
+      "xml_valid": true,
+      "renderable": true
+    }
+  ],
+  "training_time_sec": 22519.769911527634
+}

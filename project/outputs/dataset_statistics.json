@@ -1,0 +1,26 @@
+{
+  "vocab_size": 4096,
+  "files_before_filtering": 284548,
+  "files_after_cleaning": 284548,
+  "files_after_token_filter": 236529,
+  "num_files": {
+    "train": 231799,
+    "val": 2365,
+    "test": 2365
+  },
+  "num_tokens": {
+    "train": 115916260,
+    "val": 1176658,
+    "test": 1186563
+  },
+  "seq_len_stats": {
+    "mean": 500.0633368424168,
+    "median": 475.0,
+    "std": 198.81460989452523,
+    "min": 93,
+    "max": 1024,
+    "p25": 354.0,
+    "p75": 622.0,
+    "p95": 889.0
+  }
+}
