@@ -2,7 +2,7 @@
 
 **CS-GY 6923 | Disha D Shanbhag (ds8223 / N11461466) | NYU Tandon School of Engineering**
 
-This project investigates whether neural scaling laws hold for transformer language models trained on structured, non-linguistic data -- specifically Scalable Vector Graphics (SVG) code. Five decoder-only transformer models ranging from 1.35M to 88.4M parameters are trained on a corpus of ~284K SVG files (~116M tokens) drawn from three HuggingFace datasets.
+This project investigates whether neural scaling laws hold for transformer language models trained on structured, non-linguistic data, specifically Scalable Vector Graphics (SVG) code. Five decoder-only transformer models ranging from 1.35M to 88.4M parameters are trained on a corpus of ~284K SVG files (~116M tokens) drawn from three HuggingFace datasets.
 
 Under standard parameterization (SP), validation loss is non-monotonic with scale: larger models perform worse when trained at the same fixed learning rate. Maximal Update Parameterization (muP) corrects this by enabling zero-shot learning rate transfer across model widths, restoring smooth power-law scaling (α = 0.866, R² = 0.960). The best model (XL, 91.5M params, 5 epochs) achieves a test perplexity of 2.51 and generates structurally valid SVGs in 82.6% of samples.
 
